@@ -24,4 +24,21 @@ class Migration(migrations.Migration):
                 ('bio', models.TextField()),
             ],
         ),
-    ]
+        migrations.CreateModel(
+            name='Teacher',
+            fields=[
+                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID'))
+                 ('name',models.CharField(max_length=20))
+                 ('email',models.EmailField())
+                 ('phone_number',models.CharField(max_length=20))
+                 ('department',models.CharField())
+                 ('photo',models.ImageField())
+                 ('experience',models.CharField())
+                 ('education_level',models.CharField())
+                 ('dob',models.DateField())
+                 ('salary',models.PositiveBigIntegerField())
+            ]
+        )
+      
+            ]
+      
